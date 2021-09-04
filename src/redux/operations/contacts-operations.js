@@ -3,6 +3,7 @@ import * as api from 'services/api';
 
 export const fetchContacts = () => async dispatch => {
   dispatch(contactsActions.fetchContactsRequest());
+
   try {
     const contacts = await api.fetchContacts();
     dispatch(contactsActions.fetchContactsSuccess(contacts));
@@ -16,7 +17,9 @@ export const addContact = (name, number) => async dispatch => {
     name,
     number,
   };
+
   dispatch(contactsActions.addContactRequest());
+
   try {
     const addedContact = await api.addContact(newContact);
     dispatch(contactsActions.addContactSuccess(addedContact));
@@ -27,6 +30,7 @@ export const addContact = (name, number) => async dispatch => {
 
 export const deleteContact = id => async dispatch => {
   dispatch(contactsActions.deleteContactRequest());
+
   try {
     const deletedContact = await api.deleteContact(id);
     dispatch(contactsActions.deleteContactSuccess(deletedContact));
