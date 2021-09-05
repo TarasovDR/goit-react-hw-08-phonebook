@@ -1,8 +1,8 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
+import { NavLink } from 'react-router-dom';
 
 export default function AuthNav() {
   const [value, setValue] = React.useState(2);
@@ -13,26 +13,26 @@ export default function AuthNav() {
   return (
     <Paper square variant="outlined">
       <Tabs
-        aria-label="disabled tabs example"
-        indicatorColor="primary"
-        onChange={handleChange}
-        textColor="primary"
         value={value}
+        indicatorColor="primary"
+        textColor="primary"
+        onChange={handleChange}
+        aria-label="disabled tabs example"
       >
         <NavLink
-          activeClassName="activeLink"
-          className="link"
-          exact
           to="/register"
+          exact
+          className="link"
+          activeClassName="activeLink"
         >
           <Tab label="Register" />
         </NavLink>
 
         <NavLink
-          activeClassName="activeLink"
-          className="link"
-          exact
           to="/login"
+          exact
+          className="link"
+          activeClassName="activeLink"
         >
           <Tab label="Login" />
         </NavLink>

@@ -1,10 +1,9 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
 import { useDispatch, useSelector } from 'react-redux';
-import { IoIosPerson } from 'react-icons/io';
-
 import { getUsername } from 'redux/selectors/auth-selectors';
 import { logOut } from 'redux/operations/auth-operations';
+import { IoIosPerson } from 'react-icons/io';
 
 const styles = {
   container: {

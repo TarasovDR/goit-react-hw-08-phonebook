@@ -33,7 +33,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function RegisterView(fullWidth) {
+export default function RegisterView() {
   const classes = useStyles();
 
   const dispatch = useDispatch();
@@ -86,7 +86,7 @@ export default function RegisterView(fullWidth) {
                 name="firstName"
                 variant="outlined"
                 required
-                fullWidth
+                // fullWidth
                 id="firstName"
                 label="First Name"
                 autoFocus
@@ -98,7 +98,7 @@ export default function RegisterView(fullWidth) {
               <TextField
                 variant="outlined"
                 required
-                fullWidth
+                // fullWidth
                 id="lastName"
                 label="Last Name"
                 name="lastName"
@@ -111,7 +111,7 @@ export default function RegisterView(fullWidth) {
               <TextField
                 variant="outlined"
                 required
-                fullWidth
+                // fullWidth
                 id="email"
                 label="Email Address"
                 name="email"
@@ -124,7 +124,7 @@ export default function RegisterView(fullWidth) {
               <TextField
                 variant="outlined"
                 required
-                fullWidth
+                // fullWidth
                 name="password"
                 label="Password"
                 type="password"
@@ -137,7 +137,7 @@ export default function RegisterView(fullWidth) {
           </Grid>
           <Button
             type="submit"
-            fullWidth
+            // fullWidth
             variant="contained"
             color="primary"
             className={classes.submit}

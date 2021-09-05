@@ -12,33 +12,32 @@ export default function Navigation() {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
   const isLoggedIn = useSelector(getIsLoggedIn);
 
   return (
     <Paper square>
       <Tabs
-        aria-label="disabled tabs example"
-        indicatorColor="primary"
-        onChange={handleChange}
-        textColor="primary"
         value={value}
+        indicatorColor="primary"
+        textColor="primary"
+        onChange={handleChange}
+        aria-label="disabled tabs example"
       >
         <NavLink
-          activeClassName="activeNavLink"
-          className="navLink"
-          exact
           to="/"
+          exact
+          className="navLink"
+          activeClassName="activeNavLink"
         >
           <Tab label="Home" />
         </NavLink>
 
         {isLoggedIn && (
           <NavLink
-            activeClassName="activeNavLink"
-            className="navLink"
-            exact
             to="/contacts"
+            exact
+            className="navLink"
+            activeClassName="activeNavLink"
           >
             <Tab label="Contacts" />
           </NavLink>

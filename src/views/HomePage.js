@@ -8,22 +8,22 @@ import React from 'react';
 
 const styles = {
   container: {
-    minHeight: 'calc(100vh - 50px)',
+    minHeight: 'calc(100vh - 40px)',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
   },
   title: {
-    fontWeight: 500,
-    fontSize: 48,
+    fontWeight: 400,
+    fontSize: 40,
     textAlign: 'center',
   },
 };
 
-const HomePage = () => (
+const HomeView = () => (
   <div style={styles.container}>
     <h1 style={styles.title}>Your phone book</h1>
   </div>
 );
 
-export default HomePage;
+export default HomeView;

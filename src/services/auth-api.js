@@ -3,7 +3,7 @@ import axios from 'axios';
 axios.defaults.baseURL = `https://connections-api.herokuapp.com`;
 
 export const userSignUp = async newUser => {
-  const { data } = await axios.post(`/users/signup`, newUser);
+  const { data } = await axios.post('/users/signup', newUser);
   return data;
 };
 

@@ -27,7 +27,7 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: theme.palette.secondary.main,
   },
   form: {
-    width: '100%', // Fix IE 11 issue.
+    width: '100%',
     marginTop: theme.spacing(1),
   },
   submit: {
@@ -75,7 +75,7 @@ export default function SignIn() {
             variant="outlined"
             margin="normal"
             required
-            fullWidth
+            // fullWidth
             id="email"
             label="Email Address"
             name="email"
@@ -89,7 +89,7 @@ export default function SignIn() {
             variant="outlined"
             margin="normal"
             required
-            fullWidth
+            // fullWidth
             name="password"
             label="Password"
             type="password"
@@ -104,7 +104,7 @@ export default function SignIn() {
           />
           <Button
             type="submit"
-            fullWidth
+            // fullWidth
             variant="contained"
             color="primary"
             className={classes.submit}

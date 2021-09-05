@@ -3,10 +3,9 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import { PersistGate } from 'redux-persist/integration/react';
-import { store, persistor } from 'redux/store/store';
-// import store from './redux/store/store';
-import './index.css';
 import App from './App';
+import { store, persistor } from 'redux/store';
+import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -18,5 +17,5 @@ ReactDOM.render(
       </Provider>
     </PersistGate>
   </React.StrictMode>,
-  document.getElementById('root'),
+  document.querySelector('#root'),
 );
